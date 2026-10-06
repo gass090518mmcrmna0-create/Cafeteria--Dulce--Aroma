@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f1e8;
+    color: #3e2920;
+}
+
+header {
+    background: #3e2723;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #e7b77b;
+}
+
+.hero {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    padding: 70px 10%;
+    background: linear-gradient(90deg, #4a2f25, #8a6049);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 58px;
+    line-height: 1.05;
+    margin: 12px 0;
+}
+
+.hero h1 span {
+    color: #f0c28b;
+}
+
+.hero p {
+    max-width: 520px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.mini {
+    letter-spacing: 3px;
+    font-size: 13px !important;
+    color: #e7b77b;
+    font-weight: bold;
+}
+
+.boton {
+    display: inline-block;
+    margin-top: 25px;
+    background: #e7b77b;
+    color: #3e2723;
+    padding: 13px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.seccion {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.seccion h2, .nosotros h2, .contacto h2 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    margin-bottom: 40px;
+    color: #76594b;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1050px;
+    margin: auto;
+}
+
+.tarjeta {
+    background: white;
+    padding: 28px 22px;
+    border-radius: 15px;
+    box-shadow: 0 5px 18px rgba(60, 35, 20, 0.12);
+    transition: transform 0.2s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+.icono {
+    font-size: 48px;
+    margin-bottom: 12px;
+}
+
+.tarjeta h3 {
+    margin-bottom: 10px;
+    font-size: 21px;
+}
+
+.tarjeta p {
+    color: #76594b;
+    line-height: 1.5;
+    min-height: 65px;
+}
+
+.tarjeta strong {
+    display: block;
+    margin-top: 15px;
+    color: #8a4f2d;
+    font-size: 20px;
+}
+
+.nosotros {
+    background: #ead8c5;
+    padding: 75px 12%;
+}
+
+.nosotros div {
+    max-width: 750px;
+}
+
+.nosotros p:last-child {
+    line-height: 1.7;
+    margin-top: 20px;
+}
+
+.contacto {
+    text-align: center;
+    padding: 70px 20px;
+    background: #fffaf4;
+}
+
+.contacto p {
+    margin: 12px;
+}
+
+footer {
+    background: #3e2723;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    font-size: 14px;
+}
+
+@media (max-width: 800px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 7px;
+    }
+
+    .hero h1 {
+        font-size: 44px;
+    }
+
+    .productos {
+        grid-template-columns: 1fr;
+    }
+}
